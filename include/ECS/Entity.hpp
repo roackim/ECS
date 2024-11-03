@@ -6,17 +6,26 @@
 // #include <cstdint>
 
 typedef std::bitset<64> Signature; // 64 -> maximum number of different components
+#include "Types.hpp"
+
+namespace ecs::internal
+{
 
 struct Entity
 {
     
 public:
-    Entity(uint id_);
+    Entity(entity_id id_)
+    : id(id_)
+    , signature(0)
+    { }
     
     // methods
     
     // attributes
     bool deleted = false;
-    uint id;
+    entity_id id;
     Signature signature = 0;
 };
+
+}

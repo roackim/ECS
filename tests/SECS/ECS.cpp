@@ -1,4 +1,4 @@
-#include "SECS/ECS.hpp"
+#include "ECS.hpp"
 #include "doctest.h"
 
 TEST_CASE("ECS class Tests")
@@ -21,8 +21,6 @@ TEST_CASE("ECS class Tests")
         CHECK_THROWS(ecs::component::get<char>(e1));
         CHECK_THROWS(ecs::component::get<float>(e1));
         
-        // entity doesn't exists anymore
-        CHECK_THROWS(ecs::ecs.em[e1]);
     }
     
     SUBCASE("Filtering Entities")

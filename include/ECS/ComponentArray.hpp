@@ -6,6 +6,8 @@
 #include <string>
 #include <stack>
 
+namespace ecs::internal
+{
 
 // interface used in ComponentManager
 class IComponentArray
@@ -119,3 +121,5 @@ public:
     std::unordered_map<uint, uint>  entityToComponent;  // entity to component map
 
 };
+
+}

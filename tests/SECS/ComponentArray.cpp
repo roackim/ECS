@@ -1,5 +1,7 @@
-#include "SECS/ComponentArray.hpp"
+#include "ECS/ComponentArray.hpp"
 #include "doctest.h"
+
+using namespace ecs::internal;
 
 
 TEST_CASE("ComponentArray Tests") 

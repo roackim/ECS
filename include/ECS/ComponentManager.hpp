@@ -5,7 +5,10 @@
 #include <vector>
 
 #include "ComponentArray.hpp"
-#include "Entity.h"
+#include "Entity.hpp"
+
+namespace ecs::internal
+{
 
 class ComponentManager
 {
@@ -86,3 +89,6 @@ private:
     std::vector<IComponentArray*> component_arrays;
     std::unordered_map<std::type_index, uint> type_to_index;
 };
+
+
+}

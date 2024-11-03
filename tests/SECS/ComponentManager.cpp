@@ -1,6 +1,7 @@
-#include "SECS/ComponentManager.hpp"
+#include "ECS/ComponentManager.hpp"
 #include "doctest.h" 
 
+using namespace ecs::internal;
 
 TEST_CASE("ComponentManager Tests") // most of the cases are handled by ComponentArray
 {                                   // this is mainly an interface to add component of any types

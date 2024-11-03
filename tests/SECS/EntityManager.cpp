@@ -1,5 +1,8 @@
-#include "SECS/EntityManager.h"
+#include "ECS/EntityManager.hpp"
 #include "doctest.h"
+
+using namespace ecs::internal;
+
 
 TEST_CASE("EntityManager Tests") {
     EntityManager em;
