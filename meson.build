@@ -1,4 +1,4 @@
-project('SECS', 'cpp',
+project('ECS', 'cpp',
     version : '0.1',
     default_options : [
         'cpp_std=c++17',
@@ -27,7 +27,7 @@ lib_src = [
     # Add other source files here
 ]
 
-secs_lib = static_library('secs',
+ecs_lib = static_library('ecs',
     sources: lib_src,
     include_directories: include_directories('include'),
     install: true,
@@ -37,10 +37,10 @@ secs_lib = static_library('secs',
 
 test_src = [
     'tests/main.cpp',
-    'tests/SECS/ComponentArray.cpp',
-    'tests/SECS/ComponentManager.cpp',
-    'tests/SECS/ECS.cpp',
-    'tests/SECS/EntityManager.cpp',
+    'tests/ECS/ComponentArray.cpp',
+    'tests/ECS/ComponentManager.cpp',
+    'tests/ECS/ECS.cpp',
+    'tests/ECS/EntityManager.cpp',
 ]
 
 # Create executable
@@ -48,6 +48,6 @@ test_exe = executable(test_target,
     sources : test_src,
     include_directories: include_directories('include', 'tests'),
     install: true,
-    link_with: secs_lib,
+    link_with: ecs_lib,
     install_dir: join_paths(meson.current_source_dir(), target_folder)
 )

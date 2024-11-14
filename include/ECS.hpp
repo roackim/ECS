@@ -6,7 +6,7 @@
 #include "ECS/ComponentManager.hpp"
 #include "ECS/EntityManager.hpp"
 
-#include "Types.hpp"
+#include "ECS/Types.hpp"
 
 namespace ecs 
 {

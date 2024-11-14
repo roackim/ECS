@@ -1,8 +1,10 @@
-# SECS
-A custom ECS, named Simple Entity Component System. 
+# ECS
+A simple, custom, Entity Component System. 
 It aims for simplicity and robustness. 
 
-Warning: Very early version.
+Warning: 
+    I would advise against using this ECS and rather use a more robust and performant one
+    such as for example flecs or entt
 
 # Dependencies
 	- gcc
